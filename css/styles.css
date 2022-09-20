@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+:root{
+    --bg-primary:#0756cf;
+    --bg-secondary:#01032c;
+    --bg-gray:#666d83;
+    --bg-services:#f8f8fa;  
+    --text-primary:#0756cf;
+    --text-secondary:#05083b;
+    --text-gray:#666d83;
+    --poppins: var(--poppins);
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 65px;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+.navbar{
+    background-color: hsla(0, 0, 100%, 0.8)!important;
+    backdrop-filter: blur(5px);
+}
+
+.navbar-brand{
+    width: 6rem;
+}
+
+.nav-link{
+    color: var(--text-secondary);
+}
+
+section{
+    padding-top: 5.5rem!important;
+    padding-bottom: 5.5rem!important;
+}
+
+.landingpage-header{
+    color: var(--text-secondary);
+    font-size: 2.205rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.cargo-ship1{
+    display: none;
+}
+
+.cargo-ship2{
+    display: none;
+}
+
+h2{
+    color: var(--text-secondary);
+    font-weight: bold;
+    margin-bottom: 0!important;
+}
+
+h3{
+    font-size: 1.250rem;
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+
+h5{
+    color: var(--text-secondary);
+    margin-bottom: 0!important;
+}
+
+span{
+    color: var(--text-primary);
+    margin-bottom: 0!important;
+}
+
+p, blockquote{
+    color: var(--text-gray);
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 0!important;
+}
+
+.cta-btn{
+    background-color: var(--bg-primary);
+}
+
+.cta-btn:hover{
+    opacity: 0.7;
+    background-color: var(--bg-primary);
+}
+
+.services-section, .review-section{
+    background-color: var(--bg-services);
+}
+
+.card{
+    border-radius: 1.25rem;
+}
+
+.card-body{
+    padding: 2rem 1.2rem;
+}
+
+.card.review{
+    margin-right: 1rem;
+}
+
+.feature-section{
+    gap: 5rem;
+}
+
+.feature-list{
+    position: relative;
+    top: 10rem;
+    width: 15.125rem;
+    padding: 5rem 2.0625rem;
+    border-radius: 1.875rem;
+    background-color: var(--bg-secondary);
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.footer-section{
+    background-color: var(--bg-primary);
+}
+
+
+
+/*************************************************          Mobile Design              *****************************************************/
+
+@media screen and (max-width: 991px) {
+    body::before {
+        height: 4rem;
+    }
+
+    section{
+        padding-top: 4rem!important;
+        padding-bottom: 4rem!important;
+    }
+
+    .landingpage-header{
+        font-size: 1.96rem;
+    }
+
+    p, blockquote{
+        font-size: 16px;
+    }
+
+    .card-image{
+        width: 1.875rem;
+    }
+
+    h5{
+        font-size: 1.125rem;
+    }
+
+    .feature-list{
+        top: 6rem;
+        width: 14rem;
+    }    
+
+    .feature-icon{
+        width: 1.5625rem;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    body::before {
+        height: 3.5rem;
+    }
+    
+    section{
+        padding-top: 3rem!important;
+        padding-bottom: 3rem!important;
+    }
+
+    .navbar-brand{
+        width: 5rem;
+    }
+
+    .offcanvas{
+        width: 50%!important;
+    }
+
+    .offcanvas-nav{
+        font-size: 18px;
+    }
+
+    .cargo-ship{
+        width: 100%;
+    }
+
+    .landingpage-header{
+        font-size: 1.85rem;
+    }
+
+    .feature-section{
+        gap: 0;
+    }
+
+    .feature-list{
+        display: none!important;
+    }
+
+    #reviewSection{
+        max-width: 400px;
+    }
+
+    .reviews{
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 426px) {
+        .hero-image{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .cargo-ship2{
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 575px){
+    .container{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .contact-icon{
+        max-width: 1.125rem;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    .offcanvas{
+        width: 70%!important;
+    }
+
+    .landingpage-header{
+        font-size: 1.6rem;
+    }
+
+
+    .hero-image{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cargo-ship1{
+        display: block;
+        width: 100%;
+    }
+}
+

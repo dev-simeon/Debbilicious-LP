@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DebbiLicious Cart</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md shadow fixed-top">
+        <div class="container">
+            <img src="images/Logo.png" alt="brand-logo" class="navbar-brand">
+
+            <button type="button" class="btn d-block d-md-none" data-bs-toggle="offcanvas"
+                data-bs-target="#navmenu" aria-controls="offcanvasExample">
+                <span>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z" fill="#05083b" fill-rule="evenodd" />
+                    </svg>
+                </span>
+            </button>
+
+            <ul class="navbar-nav d-none d-md-flex">
+                <li class="nav-item"><a class="nav-link" href="#Landing-page">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Our-services">Our Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end d-block d-md-none px-4 bg-primary border-0 shadow" id="navmenu">
+        <div class="offcanvas-header justify-content-end mt-1 px-0">
+            <img src="images/ci_close-big.svg" alt="close btn" data-bs-dismiss="offcanvas">
+        </div>
+
+        <ul class="navbar-nav offcanvas-nav flex-column pt-5 pe-4">
+            <li class="nav-item align-self-end"><a class="nav-link text-white" href="#Landing-page">Home</a></li>
+            <li class="nav-item align-self-end"><a class="nav-link text-white" href="#Our-services">Our Services</a>
+            </li>
+            <li class="nav-item align-self-end"><a class="nav-link text-white" href="#Contact-us">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="Landing-page" class="hero-section container d-flex justify-content-center flex-column-reverse flex-md-row gap-4 gap-md-5">
+            <div
+                class="hero-content d-flex flex-column gap-3 align-self-center text-center text-md-start col-md-6 col-lg-5">
+                <h1 class="landingpage-header">Send parcels <span>Reliably</span> to any part of the world.</h1>
+                <p>Our global logistics expertise, advanced supply chain will help you to implement successfull delivery
+                    to
+                    anywhere in the world.The services also have an affordable rate.
+                </p>
+                <div class="mt-3">
+                    <button type="button" class="btn text-white py-2 px-2 px-md-3 cta-btn border-0 shadow
+                        align-self-center align-self-md-start">Call Us Now
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="images/image1.png" alt="cargo-plane" class="img-fluid cargo-plane d-none d-md-block">
+                <img src="images/image2.png" alt="cargo-ship" class="img-fluid cargo-ship1">
+                <img src="images/image3.png" alt="cargo-ship" class="img-fluid cargo-ship2">
+            </div>
+        </section>
+
+        <section id="Our-services" class="services-section">
+            <div class="container">
+                <h2 class="text-center">Our Services</h2>
+                <div
+                    class="servives-wrapper-1 row align-items-center gap-3 gap-md-0 gap-lg-4 pt-4 pt-md-5 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="card border-0">
+                            <div class="card-body d-flex gap-3">
+                                <div class="card-icon">
+                                    <img src="images/ship-icon.svg" alt="cargo-ship" class="card-image">
+                                </div>
+                                <div class="card-content ps-0">
+                                    <h5>Dry Shipping</h5>
+                                    <p class="pt-2">This method transports large quantities of raw materials via sea
+                                        at a very low cost.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="card border-0">
+                            <div class="card-body d-flex gap-3">
+                                <div class="card-icon">
+                                    <img src="images/plane-icon.svg" alt="cargo-ship" class="card-image">
+                                </div>
+                                <div class="card-content ps-0">
+                                    <h5>Frozen Shipping</h5>
+                                    <p class="pt-2">This method is fast. When thinking of sending perishable good you would 
+                                        prefer this method.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="servives-wrapper-2 row gap-3 gap-md-0 gap-lg-4 pt-4 pt-md-5 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="card border-0">
+                            <div class="card-body d-flex gap-3">
+                                <div class="card-icon">
+                                    <img src="images/truck-icon.svg" alt="cargo-ship" class="card-image">
+                                </div>
+                                <div class="card-content ps-0">
+                                    <h5>Express Delivery</h5>
+                                    <p class="pt-2">This services include speed and efficiency.
+                                        The delivery time is estimated to 72 hours.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="card border-0">
+                            <div class="card-body d-flex gap-3">
+                                <div class="card-icon">
+                                    <img src="images/parcel-icon.svg" alt="cargo-ship" class="card-image">
+                                </div>
+                                <div class="card-content ps-0">
+                                    <h5>Shop and Ship</h5>
+                                    <p class="pt-2">We source and ship local foods and personal effects anywhere around
+                                        the globe.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-section container d-flex justify-content-md-center">
+            <div class="feature-list d-flex flex-column gap-3">
+                <div class="d-flex align-items-center gap-2"><img src="images/check-box.svg" alt="checbox"
+                        class="feature-icon">
+                    <p class="text-white">Fast</p>
+                </div>
+                <div class="d-flex align-items-center gap-2"><img src="images/check-box.svg" alt="checbox"
+                        class="feature-icon">
+                    <p class="text-white">Efficient</p>
+                </div>
+                <div class="d-flex align-items-center gap-2"><img src="images/check-box.svg" alt="checbox"
+                        class="feature-icon">
+                    <p class="text-white">Reliable</p>
+                </div>
+                <div class="d-flex align-items-center gap-2"><img src="images/check-box.svg" alt="checbox"
+                        class="feature-icon">
+                    <p class="text-white">Affordable</p>
+                </div>
+            </div>
+
+            <div class="feature-content col-md-7 col-lg-6 d-flex flex-column gap-3">
+                <h2 class="text-center text-md-start">Why Choose Us</h2>
+                <div>
+                    <p class="mb-3">We are a logistics company that helps you deliver all your packages
+                        and personal effect to anywhere you want, around the globe. 
+                    </p>
+                    <p>Our scaling system is accurate and no dishonesty of any sort. We treat your parcels with care and
+                        pamper they deserve.
+                    </p>
+                </div>
+                    
+                <div class="feature-list2 d-flex flex-column gap-2 d-md-none">
+                    <li class="d-flex align-items-center gap-2"><img src="images/check-box.svg" alt="checbox"
+                            class="feature-icon">
+                        <p>Fast</p>
+                    </li>
+                    <li class="d-flex align-items-center gap-2"><img src="images/check-box.svg" alt="checbox"
+                            class="feature-icon">
+                        <p>Efficient</p>
+                    </li>
+                    <li class="d-flex align-items-center gap-2"><img src="images/check-box.svg" alt="checbox"
+                            class="feature-icon">
+                        <p>Reliable</p>
+                    </li>
+                    <li class="d-flex align-items-center gap-2"><img src="images/check-box.svg" alt="checbox"
+                            class="feature-icon">
+                        <p>Affordable</p>
+                    </li>
+                </div>
+                <div class="mt-3">
+                    <button type="button" class="btn text-white py-2 px-3 cta-btn border-0 shadow">Talk To Us</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="review-section">
+            <div id="reviewSection" class="container">
+                <h2 class="text-center">What Our Customers Say’s</h2>
+                <div class="reviews d-flex pt-4 pt-md-5">
+                    <div class="card border-0 review">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <img src="images/Frame 8.svg" alt="five-star">
+                            </div>
+                            <blockquote class="mb-0">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                                aspernatur nemo debitis hic
+                                excepturi omnis". <span class="fw-bolder">-Jane</span>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 review">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <img src="images/Frame 8.svg" alt="five-star">
+                            </div>
+                            <blockquote class="mb-0">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                                aspernatur nemo debitis hic
+                                excepturi omnis". <span class="fw-bolder">-Jane</span>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 review">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <img src="images/Frame 8.svg" alt="five-star">
+                            </div>
+                            <blockquote class="mb-0">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                                aspernatur nemo debitis hic
+                                excepturi omnis". <span class="fw-bolder">-Jane</span>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 review">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <img src="images/Frame 8.svg" alt="five-star">
+                            </div>
+                            <blockquote class="mb-0">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                                aspernatur nemo debitis hic
+                                excepturi omnis". <span class="fw-bolder">-Jane</span>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <p class="fw-bold">Working hours</p>
+            <h2>Mon-Fri: 9am - 6pm</h2>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between contact-section mt-3 gap-5 gap-md-0">
+                <div class="d-flex flex-column gap-3 align-self-start">
+                    <div class="d-flex flex-column flex-sm-row gap-2">
+                        <img src="images/bi_house.svg" alt="" class="contact-icon">
+                        <div>
+                            <h3 class="mb-1">Visit Us</h3>
+                            <a href="#"> 6, Oremeta Street Oregun, <br>Ikeja Lagos.</a>
+                        </div>
+                    </div>
+        
+                    <div class="d-flex  flex-column flex-sm-row gap-2">
+                        <img src="images/bi_telephone.svg" alt="" class="contact-icon">
+                        <div>
+                            <h3 class="mb-1">Call Us</h3>
+                            <a href="tel:+2348063506603" class="decoration-none">+2348063506603</a>
+                        </div>
+                    </div>
+        
+                    <div class="d-flex  flex-column flex-sm-row gap-2">
+                        <img src="images/ant-design_mail-outlined.svg" alt="" class="contact-icon">
+                        <div>
+                            <h3 class="mb-1">Email Us</h3>
+                            <a href="Mailto:debbisola@gmail.com">debbisola@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="align-self-center">
+                    <a type="button" href="https://whatsapp.com/" class="btn text-white py-2 px-3 cta-btn border-0 shadow text-center">
+                        <img src="images/akar-icons_whatsapp-fill.svg" alt="" class="me-2">Talk To Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="Contact-us" class="footer-section py-5">
+        <div class="container text-center">
+            <img src="images/brandico_facebook.svg" alt="">
+            <img src="images/arcticons_twitter.svg" alt="">
+            <img src="images/akar-icons_instagram-fill.svg" alt="">
+            <p class="text-white mt-3" style="font-size: 13px;">&copy; 2022 DebbiLicious Cart. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <!-- slick Carousel CDN -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+    <!-- Our Custom Js File That Calls The Slick Method. -->
+    <script src="js/script.js"></script>
+    <!-- Bootstrap js Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
