@@ -21,37 +21,9 @@ body{
     font-family: 'Poppins';
 }
 
-.navbar{
-    background-color: hsla(0, 0, 100%, 0.8)!important;
-    backdrop-filter: blur(5px);
-}
-
-.navbar-brand{
-    width: 7rem;
-}
-
-.nav-link{
-    color: var(--text-secondary);
-}
-
-.nav-link:hover{
-    font-weight: bold;
-}
-
-section{
-    padding-top: 5.5rem!important;
-    padding-bottom: 5.5rem!important;
-}
-
-.landingpage-header{
-    color: var(--text-secondary);
-    font-size: 2.205rem;
-    font-weight: 900;
-    margin-bottom: 0;
-}
-
-.cargo-ship1, .cargo-ship2{
-    display: none;
+/* General Styles start */
+a{
+    color: var(--text-gray);
 }
 
 h2, h5{
@@ -101,9 +73,39 @@ p, blockquote{
 .card-body{
     padding: 2rem 1.2rem;
 }
+/* General Styles end */
 
-.card.review{
-    margin-right: 1rem;
+.navbar{
+    background-color: hsla(0, 0, 100%, 0.8)!important;
+    backdrop-filter: blur(5px);
+}
+
+.navbar-brand{
+    width: 7rem;
+}
+
+.nav-link{
+    color: var(--text-secondary);
+}
+
+.nav-link:hover{
+    font-weight: bold;
+}
+
+section{
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+}
+
+.landingpage-header{
+    color: var(--text-secondary);
+    font-size: 2.205rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.cargo-ship1, .cargo-ship2{
+    display: none;
 }
 
 .feature-section{
@@ -120,21 +122,17 @@ p, blockquote{
     background-color: var(--bg-secondary);
 }
 
-.slanted-design{
-    position: absolute;
-    top: -3rem;
-    z-index: 5;
-    background-color: var(--bg-services);
-    width: inherit;
-    height: 100px;
-    transform: skewY(-3deg);
-    -webkit-transform: skewY(-3deg);
-    -moz-transform: skewY(-3deg);
-    -ms-transform: skewY(-3deg);
+#review{
+    transform: skewY(5deg); 
+    
 }
 
-a{
-    color: var(--text-gray);
+reviewSection{
+    transform: skewY(-5deg);
+}
+
+.card.review{
+    margin-right: 1rem;
 }
 
 .footer-section{
@@ -151,8 +149,8 @@ a{
     }
 
     section{
-        padding-top: 4rem!important;
-        padding-bottom: 4rem!important;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 
     .navbar-brand{
@@ -232,11 +230,6 @@ a{
         justify-content: center;
     }
 
-    .slanted-design{
-        height: 50px;
-        top: -2rem;
-    }
-
     .social-icon{
         width: 1.250rem;
     }
@@ -256,7 +249,7 @@ a{
     }
 
     .contact-icon{
-        max-width: 1.03rem;
+        max-width: 1.250rem;
     }
 
 }
