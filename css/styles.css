@@ -120,9 +120,14 @@ p, blockquote{
     background-color: var(--bg-secondary);
 }
 
-#review{
-    transform: skewY(7deg);
-    padding-bottom: 6.5rem!important;
+.slanted-design{
+    position: absolute;
+    top: -3rem;
+    z-index: 5;
+    background-color: var(--bg-services);
+    width: inherit;
+    height: 100px;
+    transform: skewY(-3deg);
 }
 
 a{
@@ -175,11 +180,6 @@ a{
     .feature-icon{
         width: 1.5625rem;
     }
-
-    #review{
-        transform: none;
-        padding-bottom: 4rem!important;
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -227,6 +227,11 @@ a{
 
     .reviews{
         justify-content: center;
+    }
+
+    .slanted-design{
+        height: 50px;
+        top: -2rem;
     }
 
     .social-icon{
