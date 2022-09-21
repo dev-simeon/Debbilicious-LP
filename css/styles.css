@@ -86,7 +86,7 @@ p, blockquote{
     background-color: var(--bg-primary);
 }
 
-.cta-btn:active{
+.cta-btn:focus{
     background-color: var(--bg-primary);
 }
 
