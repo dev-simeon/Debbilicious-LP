@@ -113,7 +113,7 @@ p, blockquote{
 .feature-list{
     position: relative;
     z-index: 5;
-    top: 8rem;
+    top: 10rem;
     width: 15.125rem;
     padding: 5rem 2.0625rem;
     border-radius: 1.875rem;
