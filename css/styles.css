@@ -27,11 +27,15 @@ body{
 }
 
 .navbar-brand{
-    width: 6rem;
+    width: 7rem;
 }
 
 .nav-link{
     color: var(--text-secondary);
+}
+
+.nav-link:hover{
+    font-weight: bold;
 }
 
 section{
@@ -46,17 +50,12 @@ section{
     margin-bottom: 0;
 }
 
-.cargo-ship1{
+.cargo-ship1, .cargo-ship2{
     display: none;
 }
 
-.cargo-ship2{
-    display: none;
-}
-
-h2{
+h2, h5{
     color: var(--text-secondary);
-    font-weight: bold;
     margin-bottom: 0!important;
 }
 
@@ -64,11 +63,6 @@ h3{
     font-size: 1.250rem;
     color: var(--text-secondary);
     font-weight: bold;
-}
-
-h5{
-    color: var(--text-secondary);
-    margin-bottom: 0!important;
 }
 
 span{
@@ -114,6 +108,7 @@ p, blockquote{
 
 .feature-list{
     position: relative;
+    z-index: 5;
     top: 10rem;
     width: 15.125rem;
     padding: 5rem 2.0625rem;
@@ -121,8 +116,12 @@ p, blockquote{
     background-color: var(--bg-secondary);
 }
 
+#review{
+    transform: skewY(7deg);
+    padding-bottom: 6.5rem!important;
+}
+
 a{
-    text-decoration: none;
     color: var(--text-gray);
 }
 
@@ -142,6 +141,10 @@ a{
     section{
         padding-top: 4rem!important;
         padding-bottom: 4rem!important;
+    }
+
+    .navbar-brand{
+        width: 6rem;
     }
 
     .landingpage-header{
@@ -168,9 +171,12 @@ a{
     .feature-icon{
         width: 1.5625rem;
     }
+
+    #review{
+        transform: none;
+        padding-bottom: 4rem!important;
+    }
 }
-
-
 
 @media screen and (max-width: 767px) {
     body::before {
@@ -194,20 +200,17 @@ a{
         font-size: 18px;
     }
 
-    .cargo-ship{
-        width: 100%;
-    }
-
     .landingpage-header{
         font-size: 1.85rem;
     }
 
-    .feature-section{
-        gap: 0;
+    .hero-image{
+        width: 80%;
+        margin: 0 auto;
     }
 
-    .feature-list{
-        display: none!important;
+    .feature-section{
+        gap: 0;
     }
 
     #reviewSection{
@@ -218,12 +221,11 @@ a{
         justify-content: center;
     }
 
-    @media screen and (min-width: 426px) {
-        .hero-image{
-            width: 80%;
-            margin: 0 auto;
-        }
+    .social-icon{
+        width: 1.250rem;
+    }
 
+    @media screen and (min-width: 426px) {
         .cargo-ship2{
             display: block;
             width: 100%;
@@ -238,7 +240,7 @@ a{
     }
 
     .contact-icon{
-        max-width: 1.125rem;
+        max-width: 1.03rem;
     }
 
 }
@@ -250,12 +252,6 @@ a{
 
     .landingpage-header{
         font-size: 1.6rem;
-    }
-
-
-    .hero-image{
-        width: 80%;
-        margin: 0 auto;
     }
 
     .cargo-ship1{
