@@ -213,6 +213,10 @@ a{
         gap: 0;
     }
 
+    .feature-icon{
+        width: 1.25rem;
+    }
+
     #reviewSection{
         max-width: 400px;
     }
