@@ -86,6 +86,10 @@ p, blockquote{
     background-color: var(--bg-primary);
 }
 
+.cta-btn:active{
+    background-color: var(--bg-primary);
+}
+
 .services-section, .review-section{
     background-color: var(--bg-services);
 }
