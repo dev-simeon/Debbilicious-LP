@@ -131,7 +131,7 @@ section{
     -webkit-transform: skewY(5deg);
     -ms-transform: skewY(5deg);
     -moz-transform: skewY(5deg); 
-    
+    padding-bottom: 6.5rem;
 }
 
 #reviewSection{
@@ -199,8 +199,8 @@ section{
     }
     
     section{
-        padding-top: 3rem!important;
-        padding-bottom: 3rem!important;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .navbar-brand{
@@ -230,6 +230,10 @@ section{
 
     .feature-icon{
         width: 1.25rem;
+    }
+
+    #review{
+        padding-bottom: 4rem;
     }
 
     #reviewSection{
