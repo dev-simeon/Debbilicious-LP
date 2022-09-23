@@ -14,11 +14,14 @@
 body::before {
     display: block;
     content: '';
-    height: 65px;
+    height: 70px;
 }
 
 body{
     font-family: 'Poppins';
+    background-image: url(../images/Ellipse\ 5.svg);
+    background-repeat: no-repeat;
+    background-position: 5rem 91%;
 }
 
 /* General Styles start */
@@ -53,12 +56,8 @@ p, blockquote{
     background-color: var(--bg-primary);
 }
 
-.cta-btn:hover{
+.cta-btn:hover, .cta-btn:focus, .cta-btn:active{
     opacity: 0.7;
-    background-color: var(--bg-primary);
-}
-
-.cta-btn:focus{
     background-color: var(--bg-primary);
 }
 
@@ -108,11 +107,14 @@ section{
     margin-bottom: 0;
 }
 
-.cargo-ship1, .cargo-ship2{
-    display: none;
+.cargo-plane{
+    height: 30rem;
 }
 
 .feature-section{
+    background-image: url(../images/Ellipse\ 5.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 4rem;
     gap: 5rem;
     padding-top: 3rem;
 }
@@ -136,10 +138,10 @@ section{
 }
 
 #reviewSection{
-    transform: skewY(-5deg);
-    -webkit-transform: skewY(-5deg);
-    -ms-transform: skewY(-5deg);
-    -moz-transform: skewY(-5deg);
+    transform: skewY(-2deg);
+    -webkit-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
 }
 
 .card.review{
@@ -147,7 +149,7 @@ section{
 }
 
 .contact-message{
-    column-gap: 15rem;
+    column-gap: 13rem;
 }
 
 .footer-section{
@@ -161,6 +163,10 @@ section{
 @media screen and (max-width: 991px) {
     body::before {
         height: 4rem;
+    }
+
+    body{
+        background-position: -15% 89%;
     }
 
     section{
@@ -188,6 +194,10 @@ section{
         font-size: 1.125rem;
     }
 
+    .feature-section{
+        background-position: 110% 4rem;
+    }
+
     .feature-list{
         top: 6rem;
         width: 14rem;
@@ -196,11 +206,19 @@ section{
     .feature-icon{
         width: 1.5625rem;
     }
+
+    .contact-message{
+        column-gap: 7rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
     body::before {
         height: 3.5rem;
+    }
+
+    body{
+        background-position: -70% 90%;
     }
     
     section{
@@ -230,6 +248,7 @@ section{
     }
 
     .feature-section{
+        background-image: none;
         gap: 0;
     }
 
@@ -249,19 +268,8 @@ section{
         justify-content: center;
     }
 
-    .contact-message{
-        column-gap: 8.4rem;
-    }
-
     .social-icon{
         width: 1.250rem;
-    }
-
-    @media screen and (min-width: 426px) {
-        .cargo-ship2{
-            display: block;
-            width: 100%;
-        }
     }
 }
 
@@ -288,10 +296,5 @@ section{
 
     .landingpage-header{
         font-size: 1.6rem;
-    }
-
-    .cargo-ship1{
-        display: block;
-        width: 100%;
     }
 }
