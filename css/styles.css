@@ -114,12 +114,13 @@ section{
 
 .feature-section{
     gap: 5rem;
+    padding-top: 3rem;
 }
 
 .feature-list{
     position: relative;
     z-index: 5;
-    top: 10rem;
+    top: 7rem;
     width: 15.125rem;
     padding: 5rem 2.0625rem;
     border-radius: 1.875rem;
@@ -143,6 +144,10 @@ section{
 
 .card.review{
     margin-right: 1rem;
+}
+
+.contact-message{
+    column-gap: 15rem;
 }
 
 .footer-section{
@@ -244,6 +249,10 @@ section{
         justify-content: center;
     }
 
+    .contact-message{
+        column-gap: 7rem;
+    }
+
     .social-icon{
         width: 1.250rem;
     }
@@ -260,6 +269,10 @@ section{
     .container{
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .contact-message{
+        gap: 2rem;
     }
 
     .contact-icon{
