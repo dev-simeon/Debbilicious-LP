@@ -107,10 +107,6 @@ section{
     margin-bottom: 0;
 }
 
-.cargo-plane{
-    height: 30rem;
-}
-
 .feature-section{
     background-image: url(../images/Ellipse\ 5.svg);
     background-repeat: no-repeat;
@@ -146,6 +142,13 @@ section{
 
 .card.review{
     margin-right: 1rem;
+}
+
+.blob{
+    position: absolute;
+    right: -0;
+    bottom: 11%;
+
 }
 
 .contact-message{
