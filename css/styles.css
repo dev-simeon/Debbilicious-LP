@@ -146,8 +146,9 @@ section{
 
 .blob{
     position: absolute;
-    right: -0;
+    right: 0;
     bottom: 11%;
+    z-index: -4;
 
 }
 
@@ -162,6 +163,13 @@ section{
 
 
 /*************************************************          Mobile Design              *****************************************************/
+@media screen and (max-width: 1023px) {
+    .blob{
+        width: 250px;
+        bottom: 13%;
+    }
+}
+
 
 @media screen and (max-width: 991px) {
     body::before {
@@ -212,6 +220,13 @@ section{
 
     .contact-message{
         column-gap: 7rem;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .blob{
+        bottom: 15%;
     }
 }
 
@@ -271,6 +286,11 @@ section{
         justify-content: center;
     }
 
+    .blob{
+        width: 200px;
+        bottom: 13%;
+    }
+
     .social-icon{
         width: 1.250rem;
     }
@@ -280,6 +300,10 @@ section{
     .container{
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .blob{
+        bottom: 19%;
     }
 
     .contact-message{
@@ -292,9 +316,20 @@ section{
 
 }
 
+@media screen and (max-width: 460px) {
+    .blob{
+        width: 100px;
+        bottom: 21%;
+    }
+}
+
 @media screen and (max-width: 425px){
     .offcanvas{
         width: 70%!important;
+    }
+
+    h4{
+        font-size: 18px;
     }
 
     .landingpage-header{
