@@ -141,8 +141,11 @@ section{
 }
 
 .card.review{
-    min-height: 213.87px;
     margin-right: 1rem;
+}
+
+.card-body{
+    min-height: 220px;
 }
 
 .blob{
@@ -198,8 +201,8 @@ section{
         font-size: 16px;
     }
 
-    .card.review{
-        min-height: 180px;
+    .card-body{
+        min-height: 185px;
     }
 
     .card-image{
