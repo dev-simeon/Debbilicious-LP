@@ -141,6 +141,7 @@ section{
 }
 
 .card.review{
+    min-height: 213.87px;
     margin-right: 1rem;
 }
 
@@ -195,6 +196,10 @@ section{
 
     p, blockquote{
         font-size: 16px;
+    }
+
+    .card.review{
+        min-height: 180px;
     }
 
     .card-image{
