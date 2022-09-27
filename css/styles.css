@@ -144,7 +144,7 @@ section{
     margin-right: 1rem;
 }
 
-.card-body{
+.testimonial{
     min-height: 220px;
 }
 
@@ -201,7 +201,7 @@ section{
         font-size: 16px;
     }
 
-    .card-body{
+    .testimonial{
         min-height: 185px;
     }
 
