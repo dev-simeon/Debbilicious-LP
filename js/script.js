@@ -4,7 +4,7 @@ $('.reviews').slick({
     infinite: true,
     speed: 300,
     arrows: false, // Adds arrows to sides of slider
-    autoplay: true,
+    autoplay: false,
     responsive: [
       {
         breakpoint: 992,

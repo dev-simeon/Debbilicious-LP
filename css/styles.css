@@ -42,7 +42,6 @@ h4{
 
 span{
     color: var(--text-primary);
-    margin-bottom: 0!important;
 }
 
 p, blockquote{
@@ -142,10 +141,7 @@ section{
 
 .card.review{
     margin-right: 1rem;
-}
-
-.testimonial{
-    min-height: 220px;
+    height: 200px;
 }
 
 .blob{
@@ -167,6 +163,12 @@ section{
 
 
 /*************************************************          Mobile Design              *****************************************************/
+@media screen and (max-width: 1200px) {
+    .card.review{
+        height: 210px;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .blob{
         width: 250px;
@@ -201,10 +203,6 @@ section{
         font-size: 16px;
     }
 
-    .testimonial{
-        min-height: 185px;
-    }
-
     .card-image{
         width: 1.875rem;
     }
@@ -224,6 +222,10 @@ section{
 
     .feature-icon{
         width: 1.5625rem;
+    }
+
+    .card.review{
+        height: 180px;
     }
 
     .contact-message{
@@ -290,10 +292,6 @@ section{
         max-width: 400px;
     }
 
-    .reviews{
-        justify-content: center;
-    }
-
     .blob{
         width: 200px;
         bottom: 13%;
@@ -312,6 +310,10 @@ section{
 
     .blob{
         bottom: 19%;
+    }
+
+    .card.review{
+        height: 200px;
     }
 
     .contact-message{
